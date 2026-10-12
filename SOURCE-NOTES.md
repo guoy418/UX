@@ -54,3 +54,9 @@ Sites 地址：https://ux-research-spend-portfolio.sea.chatgpt.site
 ## 原始参考与公开资源边界
 
 原始资料仍在 ../Lloyds项目 中，未被修改或纳入站点 Git 仓库。部署只包含 dist 和 Sites 所需的部署元数据。QA 文件、维护说明及本地脚本不对访客提供。
+
+
+## 2026-10-13：Vibe Coding 案例已补充
+GitHub 版本路径使用 `docs/`。Vibe Coding 已由占位改为完整案例；此前“三个 AI 案例仅占位”的说明已过时。素材来自《华为机考Vibe Coding.docx》及该项目展示素材，原件未改动。Word 中的写作建议没有直接当成研究事实；网页保留自我观察、非正式社媒观察与设计框架的区别。任务流程改为可切换的五步展示，五项设计决策配合界面截图讲解；次要资料联动与简历管理放入展开区域。未提供的技术栈、模型、开发轮次和效果数字没有补写。
+
+正文与目录：`docs/content/vibe-coding.js`；公开截图：`docs/assets/vibe-coding/`。图片是作者提供的产品界面，界面示例数字不代表本项目成效。只发布精选截图，不发布 Word、原始参考或 QA 文件。
