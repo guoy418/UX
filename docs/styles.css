@@ -47,3 +47,5 @@
 @media(max-width:600px){.garena-product{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.garena-product figure{margin:0}.garena-product .image-button{max-width:100%}.garena-product .image-button span{display:none}.garena-product figcaption{font-size:12px;line-height:1.6}}
 
 .garena-dimension-conclusion{background:#e2ece7;border-left:3px solid #175b49;border-radius:6px;padding:28px;margin:36px 0 44px}.garena-dimension-conclusion>span{font-size:14px;color:#175b49}.garena-dimension-conclusion>h3{margin:12px 0 16px}.garena-dimension-conclusion .garena-branches{margin-bottom:0}.garena-dimension-conclusion h4{font-size:26px;margin:0 0 12px}.garena-dimension-conclusion .garena-branches p{margin:0 0 8px}.garena-dimension-conclusion .garena-branches span{font-size:15px;color:#526c64}@media(max-width:600px){.garena-dimension-conclusion{padding:22px}.garena-dimension-conclusion h4{font-size:23px}}
+
+.garena-question-example{background:#e2ece7;padding:16px;border-radius:6px;margin-top:20px}.garena-question-example>span{font-size:13px;color:#175b49}.garena-question-example p{margin:10px 0 0}.garena-decision-examples h4{font-size:20px}
