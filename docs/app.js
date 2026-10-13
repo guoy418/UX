@@ -15,6 +15,6 @@ if(slug==='vibe-coding'){window.caseSections=window.vibeSections;window.initCase
 if(slug==='lloyds'){document.querySelectorAll('[data-map-persona]').forEach(b=>b.onclick=()=>selectPersona(+b.dataset.mapPersona));const charts=document.querySelectorAll('.evidence-chart');if(matchMedia('(prefers-reduced-motion: reduce)').matches)charts.forEach(c=>c.classList.add('chart-visible'));else{const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('chart-visible');observer.unobserve(e.target);}}),{threshold:.1});charts.forEach(c=>observer.observe(c));}document.querySelectorAll('[data-chart-mode]').forEach(b=>b.onclick=()=>{const chart=b.closest('.concern-chart');chart.dataset.mode=b.dataset.chartMode;chart.querySelectorAll('[data-chart-mode]').forEach(x=>x.setAttribute('aria-pressed',x===b));});}
 
 // Keep all document navigations on the same release, including return links.
-document.querySelectorAll('a[href^="/UX/"]').forEach(a=>{const u=new URL(a.getAttribute('href'),location.origin);u.searchParams.set('v','ai-workflow-hierarchy-20261013');a.setAttribute('href',u.pathname+u.search+u.hash);});
+document.querySelectorAll('a[href^="/UX/"]').forEach(a=>{const u=new URL(a.getAttribute('href'),location.origin);u.searchParams.set('v','ai-workflow-nav-20261013');a.setAttribute('href',u.pathname+u.search+u.hash);});
 
-if(slug==='ai-workflow'){window.caseSections=window.workflowSections;window.initCaseNavigation();document.querySelector('.aside-return').href='/UX/?v=ai-workflow-hierarchy-20261013#ai';}
+if(slug==='ai-workflow'){window.caseSections=window.workflowSections;window.initCaseNavigation();document.querySelector('.aside-return').href='/UX/?v=ai-workflow-nav-20261013#ai';}

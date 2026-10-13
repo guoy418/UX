@@ -16,10 +16,11 @@ window.initCaseNavigation=()=>{
  aside.addEventListener('keydown',e=>{if(e.key==='Escape'){close();mobile.focus();}});
  const setOpen=(group,open)=>{group.querySelector('.toc-expand').setAttribute('aria-expanded',String(open));group.querySelector('ul').hidden=!open;};
  aside.querySelectorAll('.toc-expand').forEach(b=>b.onclick=()=>setOpen(b.closest('.toc-group'),b.getAttribute('aria-expanded')!=='true'));
- aside.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+ aside.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
+ if(a.getAttribute('href').startsWith('#')){const target=document.getElementById(a.hash.slice(1));if(target){e.preventDefault();close();const offset=document.querySelector('header').getBoundingClientRect().height+(matchMedia('(max-width:720px)').matches?64:24);history.replaceState(null,'',a.hash);window.scrollTo({top:window.scrollY+target.getBoundingClientRect().top-offset,behavior:'instant'});update();return;}}close();}));
  let lastChapter=null,queued=false;
  const update=()=>{queued=false;const threshold=document.querySelector('header').getBoundingClientRect().height+(matchMedia('(max-width:720px)').matches?73:38);let chapter=window.caseSections[0];for(const entry of window.caseSections){if(document.getElementById(entry[0]).getBoundingClientRect().top<=threshold)chapter=entry;}
- if(chapter[0]!==lastChapter){aside.querySelectorAll('.toc-group').forEach(g=>setOpen(g,g.dataset.chapter===chapter[0]));lastChapter=chapter[0];}
+ if(chapter[0]!==lastChapter&&!aside.matches(':hover')&&!aside.contains(document.activeElement)){aside.querySelectorAll('.toc-group').forEach(g=>setOpen(g,g.dataset.chapter===chapter[0]));lastChapter=chapter[0];}
  let active=chapter[0];for(const [id] of chapter[2]){if(document.getElementById(id)?.getBoundingClientRect().top<=threshold)active=id;}
  aside.querySelectorAll('nav a').forEach(a=>{const selected=a.hash==='#'+active;a.classList.toggle('active',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
  aside.querySelectorAll('.toc-group').forEach(g=>g.classList.toggle('current-chapter',g.dataset.chapter===chapter[0]));
