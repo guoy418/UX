@@ -60,3 +60,8 @@ Sites 地址：https://ux-research-spend-portfolio.sea.chatgpt.site
 GitHub 版本路径使用 `docs/`。Vibe Coding 已由占位改为完整案例；此前“三个 AI 案例仅占位”的说明已过时。素材来自《华为机考Vibe Coding.docx》及该项目展示素材，原件未改动。Word 中的写作建议没有直接当成研究事实；网页保留自我观察、非正式社媒观察与设计框架的区别。任务流程改为可切换的五步展示，五项设计决策配合界面截图讲解；次要资料联动与简历管理放入展开区域。未提供的技术栈、模型、开发轮次和效果数字没有补写。
 
 正文与目录：`docs/content/vibe-coding.js`；公开截图：`docs/assets/vibe-coding/`。图片是作者提供的产品界面，界面示例数字不代表本项目成效。只发布精选截图，不发布 Word、原始参考或 QA 文件。
+
+
+## Garena 案例来源与改编
+依据 `Garena AI benchmark项目/garena ai benchamrk项目内容说明.docx`，保留“体验问题→理论与产品推导→任务与指标→数据集与应用”的顺序。新增首屏快速概览；表格转为可编辑框架、指标列表与切换式维度说明；原有情境题保留为结构示例，不设置虚构正确答案。理论与技术参考链接保留，不宣称复现完整论文方案。
+公开图片映射：create.jpg 来自 6d58d0c0423a4a5b2922852ab3a44988.jpg；social.jpg 来自 33a32603d8185cd194ceb11d1a02b6fb.jpg；connect.jpg 来自 c53d1cb9af81698c28f240e6f9a2de67.jpg。仅说明产品场景，不作为评测结果。原始参考不公开。
