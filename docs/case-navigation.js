@@ -17,14 +17,17 @@ window.initCaseNavigation=()=>{
  const setOpen=(group,open)=>{group.querySelector('.toc-expand').setAttribute('aria-expanded',String(open));group.querySelector('ul').hidden=!open;};
  aside.querySelectorAll('.toc-expand').forEach(b=>b.onclick=()=>setOpen(b.closest('.toc-group'),b.getAttribute('aria-expanded')!=='true'));
  aside.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
- if(a.getAttribute('href').startsWith('#')){const target=document.getElementById(a.hash.slice(1));if(target){e.preventDefault();close();const offset=document.querySelector('header').getBoundingClientRect().height+(matchMedia('(max-width:720px)').matches?64:24);history.replaceState(null,'',a.hash);window.scrollTo({top:window.scrollY+target.getBoundingClientRect().top-offset,behavior:'instant'});update();return;}}close();}));
- let lastChapter=null,queued=false;
+ if(a.getAttribute('href').startsWith('#')){const target=document.getElementById(a.hash.slice(1));if(target){e.preventDefault();close();const offset=document.querySelector('header').getBoundingClientRect().height+(matchMedia('(max-width:720px)').matches?64:24);clickedTarget=a.hash.slice(1);history.replaceState(null,'',a.hash);window.scrollTo({top:window.scrollY+target.getBoundingClientRect().top-offset,behavior:'instant'});clickedScrollY=window.scrollY;update();return;}}close();}));
+ let lastChapter=null,queued=false,clickedTarget=null,clickedScrollY=null;
+ const releaseTarget=()=>{clickedTarget=null;};window.addEventListener('wheel',releaseTarget,{passive:true});window.addEventListener('touchstart',releaseTarget,{passive:true});window.addEventListener('keydown',e=>{if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(e.key))releaseTarget();});
  const update=()=>{queued=false;const threshold=document.querySelector('header').getBoundingClientRect().height+(matchMedia('(max-width:720px)').matches?73:38);let chapter=window.caseSections[0];for(const entry of window.caseSections){if(document.getElementById(entry[0]).getBoundingClientRect().top<=threshold)chapter=entry;}
- if(chapter[0]!==lastChapter&&!aside.matches(':hover')&&!aside.contains(document.activeElement)){aside.querySelectorAll('.toc-group').forEach(g=>setOpen(g,g.dataset.chapter===chapter[0]));lastChapter=chapter[0];}
+ if(clickedTarget){chapter=window.caseSections.find(x=>x[0]===clickedTarget||x[2].some(c=>c[0]===clickedTarget))||chapter;}
+ if(chapter[0]!==lastChapter){aside.querySelectorAll('.toc-group').forEach(g=>setOpen(g,g.dataset.chapter===chapter[0]));lastChapter=chapter[0];}
  let active=chapter[0];for(const [id] of chapter[2]){if(document.getElementById(id)?.getBoundingClientRect().top<=threshold)active=id;}
+ if(clickedTarget)active=clickedTarget;
  aside.querySelectorAll('nav a').forEach(a=>{const selected=a.hash==='#'+active;a.classList.toggle('active',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
  aside.querySelectorAll('.toc-group').forEach(g=>g.classList.toggle('current-chapter',g.dataset.chapter===chapter[0]));
  document.getElementById('toc-current').textContent=chapter[1];};
- window.addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});window.addEventListener('resize',update);update();
+ window.addEventListener('scroll',()=>{if(clickedTarget&&clickedScrollY!==null&&Math.abs(window.scrollY-clickedScrollY)>3)clickedTarget=null;if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});window.addEventListener('resize',update);update();
  if(location.hash){const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target){let userMoved=false;const cancel=()=>{userMoved=true;};for(const event of ['wheel','touchstart','keydown'])window.addEventListener(event,cancel,{once:true,passive:true});const images=[...document.querySelectorAll('main img[src]')].filter(img=>img.compareDocumentPosition(target)&Node.DOCUMENT_POSITION_FOLLOWING);Promise.all(images.map(img=>{img.loading='eager';return img.decode().catch(()=>{});})).then(()=>requestAnimationFrame(()=>{if(!userMoved){target.scrollIntoView({behavior:'instant'});update();}for(const event of ['wheel','touchstart','keydown'])window.removeEventListener(event,cancel);}));}}
 };
