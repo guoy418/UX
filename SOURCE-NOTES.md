@@ -65,3 +65,10 @@ GitHub 版本路径使用 `docs/`。Vibe Coding 已由占位改为完整案例�
 ## Garena 案例来源与改编
 依据 `Garena AI benchmark项目/garena ai benchamrk项目内容说明.docx`，保留“体验问题→理论与产品推导→任务与指标→数据集与应用”的顺序。新增首屏快速概览；表格转为可编辑框架、指标列表与切换式维度说明；原有情境题保留为结构示例，不设置虚构正确答案。理论与技术参考链接保留，不宣称复现完整论文方案。
 公开图片映射：create.jpg 来自 6d58d0c0423a4a5b2922852ab3a44988.jpg；social.jpg 来自 33a32603d8185cd194ceb11d1a02b6fb.jpg；connect.jpg 来自 c53d1cb9af81698c28f240e6f9a2de67.jpg。仅说明产品场景，不作为评测结果。原始参考不公开。
+
+## AI 工作流与效率工具（2026-10-13）
+- 页面内容与研究步骤：docs/content/ai-workflow.js；独立样式前缀 workflow- 位于 docs/styles.css。
+- 首页入口在 docs/content.js，同时维护 docs/index.html 中无 JavaScript 的静态首页。
+- 公开图片仅 assets/ai-workflow/report.jpg（原素材 3b3419ab9fa0d0eb749c59b84137c492.jpg）。报告原图清晰度有限，后续可替换同名文件。
+- Agent 对话按作者文档重绘为匿名结构示例；原始截图与 Word 不公开。目录未发现文档所述两张 SVG，流程以 HTML/CSS 实现。
+- 120→2 分钟、98% 为作者项目经验估算，指整条自动化链路的人工核查工时变化。
