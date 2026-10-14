@@ -151,3 +151,16 @@
   .vibe-filter-part{margin-top:26px}
   .vibe-filter-part+.vibe-views-part{margin-top:38px;padding-top:24px}
 }
+
+/* JobPilot requirement 2: align collapsed and expanded library views. */
+.vibe-nav-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,230px));justify-content:center;gap:54px;align-items:start}
+.vibe-nav-comparison .vibe-screenshot{width:100%;margin:0;display:grid;grid-template-rows:370px auto}
+.vibe-nav-comparison .vibe-shot-button{width:100%;height:370px;overflow:hidden;display:flex;align-items:flex-start;justify-content:flex-start}
+.vibe-nav-comparison img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:left top}
+.vibe-nav-comparison figcaption{align-self:start;margin-top:14px;min-height:76px}
+@media(max-width:720px){
+  .vibe-nav-comparison{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .vibe-nav-comparison .vibe-screenshot{width:100%;grid-template-rows:280px auto}
+  .vibe-nav-comparison .vibe-shot-button{height:280px}
+  .vibe-nav-comparison figcaption{min-height:92px}
+}
