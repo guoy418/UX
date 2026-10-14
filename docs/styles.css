@@ -147,7 +147,7 @@
 /* JobPilot requirements 5–6: separate task filters from progress views. */
 .vibe-filter-part{margin-top:32px}
 .vibe-filter-part>.vibe-screenshot{margin-top:24px;margin-bottom:0}
-.vibe-filter-part+.vibe-views-part{margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
+.vibe-filter-part+.vibe-views-part{margin-top:52px;padding-top:28px;border-top:0}
 .vibe-views-part .vibe-view-reasoning{margin:18px 0 16px;gap:24px}
 .vibe-views-part .vibe-view-reasoning>div{padding-top:12px}
 .vibe-views-part .vibe-view-reasoning h4{margin:0 0 7px}
