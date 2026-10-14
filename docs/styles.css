@@ -125,3 +125,10 @@
   .vibe-design-part>h4{font-size:19px}
   .vibe-sync-part{padding:18px 16px 14px}
 }
+
+/* JobPilot delivery: keep the closing section concise. */
+.vibe-delivery{padding-top:34px}
+.vibe-delivery h2{font-size:28px;margin-bottom:16px}
+.vibe-delivery>p{max-width:760px}
+.vibe-delivery .button{margin-top:24px}
+@media(max-width:720px){.vibe-delivery h2{font-size:25px}}
