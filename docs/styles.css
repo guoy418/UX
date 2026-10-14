@@ -113,16 +113,15 @@
 
 /* JobPilot stage 1: two compact parts within the same linkage decision. */
 .vibe-design-part{margin-top:26px}
-.vibe-design-part+.vibe-design-part{margin-top:34px;padding-top:0;border-top:0}
+.vibe-design-part+.vibe-design-part{margin-top:20px;padding-top:0;border-top:0}
 .vibe-design-part>h4{font-size:21px;line-height:1.5;margin-bottom:10px}
-.vibe-sync-part>h4{display:flex;align-items:center;gap:10px}
-.vibe-sync-kind{display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:4px 9px;border-radius:4px;background:var(--mint);color:var(--green);font-size:12px;font-weight:500;line-height:1.25}
+.vibe-sync-part{padding:22px 24px 18px;border:1px solid #d6e1db;border-radius:7px;background:#f2f6f3}
+.vibe-sync-part>h4{margin-top:0;color:var(--ink)}
 .vibe-sync-part>.vibe-screenshot{margin-top:20px;margin-bottom:26px}
 .vibe-sync-part>.vibe-evidence-bridge{margin-top:-2px;margin-bottom:12px}
 .vibe-sync-part>p+.vibe-screenshot{margin-top:18px}
 @media(max-width:720px){
-  .vibe-design-part+.vibe-design-part{margin-top:28px;padding-top:0}
+  .vibe-design-part+.vibe-design-part{margin-top:16px;padding-top:0}
   .vibe-design-part>h4{font-size:19px}
-  .vibe-sync-part>h4{gap:8px}
-  .vibe-sync-kind{min-width:38px;padding:4px 8px;font-size:11px}
+  .vibe-sync-part{padding:18px 16px 14px}
 }
