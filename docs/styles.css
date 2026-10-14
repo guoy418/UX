@@ -115,14 +115,14 @@
 .vibe-design-part{margin-top:26px}
 .vibe-design-part+.vibe-design-part{margin-top:34px;padding-top:0;border-top:0}
 .vibe-design-part>h4{font-size:21px;line-height:1.5;margin-bottom:10px}
-.vibe-sync-part>h4{display:flex;align-items:baseline;gap:12px}
-.vibe-sync-index{font:500 14px/1 Georgia,serif;color:var(--green);min-width:22px}
+.vibe-sync-part>h4{display:flex;align-items:center;gap:10px}
+.vibe-sync-kind{display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:4px 9px;border-radius:4px;background:var(--mint);color:var(--green);font-size:12px;font-weight:500;line-height:1.25}
 .vibe-sync-part>.vibe-screenshot{margin-top:20px;margin-bottom:26px}
 .vibe-sync-part>.vibe-evidence-bridge{margin-top:-2px;margin-bottom:12px}
 .vibe-sync-part>p+.vibe-screenshot{margin-top:18px}
 @media(max-width:720px){
   .vibe-design-part+.vibe-design-part{margin-top:28px;padding-top:0}
   .vibe-design-part>h4{font-size:19px}
-  .vibe-sync-part>h4{gap:9px}
-  .vibe-sync-index{font-size:13px;min-width:20px}
+  .vibe-sync-part>h4{gap:8px}
+  .vibe-sync-kind{min-width:38px;padding:4px 8px;font-size:11px}
 }
