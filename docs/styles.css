@@ -97,3 +97,5 @@
 .visualization-prototype figcaption{margin-top:14px}
 
 .validation-next{background:transparent;border:0;border-radius:0;box-shadow:none;padding:0;margin:40px 0}.validation-next h3{font-size:20px;margin-bottom:12px}.validation-next p{margin:0}
+
+.report-video .video-play-hint{font-size:12px;color:var(--green);margin:0 0 12px;text-align:center}
