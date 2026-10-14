@@ -136,3 +136,18 @@
 /* JobPilot AI review: one flow sentence followed by three screenshots. */
 .vibe-ai-route{margin:16px 0 26px}
 .vibe-ai-screens .vibe-screenshot{max-width:700px;margin:22px auto}
+
+/* JobPilot requirements 5–6: separate task filters from progress views. */
+.vibe-filter-part{margin-top:32px}
+.vibe-filter-part>.vibe-screenshot{margin-top:24px;margin-bottom:0}
+.vibe-filter-part+.vibe-views-part{margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
+.vibe-views-part .vibe-view-reasoning{margin:18px 0 16px;gap:24px}
+.vibe-views-part .vibe-view-reasoning>div{padding-top:12px}
+.vibe-views-part .vibe-view-reasoning h4{margin:0 0 7px}
+.vibe-views-part .vibe-view-tabs{margin:16px 0 12px}
+.vibe-views-part #vibe-view-panel>p{margin:0 0 12px}
+.vibe-views-part #vibe-view-panel .vibe-screenshot{margin-top:12px;margin-bottom:0}
+@media(max-width:720px){
+  .vibe-filter-part{margin-top:26px}
+  .vibe-filter-part+.vibe-views-part{margin-top:38px;padding-top:24px}
+}
