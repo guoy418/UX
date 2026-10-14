@@ -111,11 +111,18 @@
 .vibe-screenshot{margin:28px 0 36px;min-width:0}.vibe-shot-button{display:block;position:relative;width:100%;padding:0;border:0;border-radius:0;background:transparent;cursor:zoom-in;text-align:left}.vibe-shot-button img{display:block;width:100%;height:auto;border-radius:5px}.vibe-shot-button>span{position:absolute;right:10px;bottom:10px;background:#f8faf7ee;color:#195c4c;padding:7px 10px;border:1px solid #c2d2c9;border-radius:4px;font-size:12px;opacity:0;transition:opacity .15s}.vibe-shot-button:hover>span,.vibe-shot-button:focus-visible>span{opacity:1}.vibe-shot-button:focus-visible{outline:2px solid var(--green);outline-offset:5px}.vibe-screenshot figcaption{padding:14px 0 0;border-left:2px solid #8fab99;padding-left:14px;margin-top:14px}.vibe-screenshot figcaption strong{font-size:16px;font-weight:550;color:var(--green)}.vibe-screenshot figcaption p{font-size:14px;line-height:1.8;color:var(--muted);margin:5px 0 0}.vibe-nav-comparison{display:flex;justify-content:center;gap:54px;align-items:flex-start;margin:28px 0}.vibe-nav-comparison .vibe-screenshot{width:min(36%,230px);margin:0}.vibe-nav-comparison img{width:100%;max-height:370px;object-fit:contain;object-position:top}.vibe-evidence-bridge{font-size:14px;line-height:1.7;color:var(--green);text-align:center;margin:-8px 0 10px}.vibe-ai-evidence.vibe-ai-screens{display:block}.vibe-ai-screens>div:first-child{max-width:720px}.vibe-ai-screens .vibe-screenshot{max-width:700px;margin-left:auto;margin-right:auto}.vibe-ai-screens .vibe-evidence-bridge{margin-top:0}.case-hero .vibe-screenshot{margin-top:36px}#vibe-journey-panel .vibe-screenshot{margin-bottom:0}@media(max-width:720px){.vibe-shot-button>span{opacity:1;font-size:11px;padding:5px 7px}.vibe-screenshot figcaption strong{font-size:15px}.vibe-screenshot figcaption p{font-size:13px}.vibe-nav-comparison{gap:20px}.vibe-nav-comparison .vibe-screenshot{width:45%}.vibe-ai-evidence.vibe-ai-screens figure{max-width:100%}.vibe-screenshot{margin:22px 0 30px}}@media(prefers-reduced-motion:reduce){.vibe-shot-button>span{transition:none}}
 @media(max-width:720px){#vibe-context h1{font-size:clamp(24px,7.4vw,32px);line-height:1.45}}
 
-/* JobPilot stage 1: separate status linkage and material linkage. */
-.vibe-design-part{margin-top:30px}
-.vibe-design-part+.vibe-design-part{margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
-.vibe-design-part>h4{font-size:21px;line-height:1.5;margin-bottom:12px}
+/* JobPilot stage 1: two compact parts within the same linkage decision. */
+.vibe-design-part{margin-top:26px}
+.vibe-design-part+.vibe-design-part{margin-top:34px;padding-top:0;border-top:0}
+.vibe-design-part>h4{font-size:21px;line-height:1.5;margin-bottom:10px}
+.vibe-sync-part>h4{display:flex;align-items:baseline;gap:12px}
+.vibe-sync-index{font:500 14px/1 Georgia,serif;color:var(--green);min-width:22px}
+.vibe-sync-part>.vibe-screenshot{margin-top:20px;margin-bottom:26px}
+.vibe-sync-part>.vibe-evidence-bridge{margin-top:-2px;margin-bottom:12px}
+.vibe-sync-part>p+.vibe-screenshot{margin-top:18px}
 @media(max-width:720px){
-  .vibe-design-part+.vibe-design-part{margin-top:38px;padding-top:24px}
+  .vibe-design-part+.vibe-design-part{margin-top:28px;padding-top:0}
   .vibe-design-part>h4{font-size:19px}
+  .vibe-sync-part>h4{gap:9px}
+  .vibe-sync-index{font-size:13px;min-width:20px}
 }
