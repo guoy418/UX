@@ -132,3 +132,7 @@
 .vibe-delivery>p{max-width:760px}
 .vibe-delivery .button{margin-top:24px}
 @media(max-width:720px){.vibe-delivery h2{font-size:25px}}
+
+/* JobPilot AI review: one flow sentence followed by three screenshots. */
+.vibe-ai-route{margin:16px 0 26px}
+.vibe-ai-screens .vibe-screenshot{max-width:700px;margin:22px auto}
