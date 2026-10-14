@@ -3,7 +3,7 @@ window.caseSections=[
 ['position','产品如何定位',[['market-evidence','竞品与市场方向','竞品：从被动回答，走向主动支持'],['user-evidence','用户需求与 AI 顾虑','用户：需求与信任，要同时回应'],['segments','用户分群','#segments'],['target-decision','目标人群取舍','#target-decision'],['personalized-support','个性化支持','.personalization-detail']]],
 ['scope','产品边界在哪',[['scope-evidence','边界的研究依据','.scope-evidence'],['capability-boundaries','范围与能力限制','.scope-boundaries'],['task-journey','产品使用路径','.product-scope-intro'],['feature-examples','六项代表性功能','.feature-examples-heading']]],
 ['priority','先发展什么',[['priority-method','功能评估方法','#priority .needs'],['priority-results','评分与重点功能','.score-panel'],['development-route','近期与长期路线','.roadmap']]],
-['design','功能如何设计',[['design-interviews','14 场功能设计访谈','.design-method'],['report-design','智能消费洞察报告','.design-stories'],['chart-design','消费数据可视化','.visualization-reasoning'],['next-validation','后续验证','.validation-next']]]
+['design','功能如何设计',[['report-design','智能消费洞察报告','.design-stories'],['chart-design','消费数据可视化','.visualization-reasoning'],['next-validation','后续验证','.validation-next']]]
 ];
 window.initCaseNavigation=()=>{
  const aside=document.querySelector('.case-layout aside');
