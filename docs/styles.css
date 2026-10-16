@@ -128,6 +128,32 @@
   .vibe-sync-part+.vibe-sync-part{padding-top:24px}
 }
 
+/* AI avatar similarity: benchmark evidence -> theory -> derived framework -> conclusion. */
+.garena-benchmark-findings{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:28px 0 8px}
+.garena-benchmark-findings>div{padding:20px 0;border-top:2px solid #9dbbb0}
+.garena-benchmark-findings span,.garena-framework-dimensions span{display:block;color:#175b49;font-size:13px;margin-bottom:10px}
+.garena-benchmark-findings h4{font-size:20px;margin:0 0 10px}
+.garena-benchmark-findings p{font-size:15px;margin:0}
+.garena-theory-study{margin-top:54px}
+.garena-theory-models{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0 46px}
+.garena-theory-models article{padding:26px 28px;background:#edf3ef;border-radius:7px}
+.garena-theory-models article>a{display:block;color:#175b49;font-size:14px;margin-bottom:16px}
+.garena-theory-models h4{font-size:21px;line-height:1.55;margin:0 0 16px}
+.garena-theory-models p{font-size:15px;margin:14px 0 0}
+.garena-model-sequence{padding:14px 0;border-block:1px solid #c7d7cf;color:#175b49}
+.garena-model-sequence b{padding:0 4px;font-weight:400;color:#78978b}
+.garena-ooc-note{padding-top:14px;border-top:1px solid #c7d7cf}
+.garena-ooc-note strong{display:block;margin-bottom:6px;color:#175b49}
+.garena-model-levels{list-style:none;padding:0;margin:16px 0 18px}
+.garena-model-levels li{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid #c7d7cf}
+.garena-model-levels strong{font-size:15px}.garena-model-levels span{font-size:14px;color:#526c64}
+.garena-framework-derive{margin-top:42px}
+.garena-framework-dimensions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:26px 0 0}
+.garena-framework-dimensions>div{padding:20px 0;border-top:2px solid #175b49}
+.garena-framework-dimensions h4{font-size:20px;margin:0 0 12px;color:#175b49}
+.garena-framework-dimensions p{font-size:15px;margin:0}
+@media(max-width:800px){.garena-theory-models{grid-template-columns:1fr}.garena-framework-dimensions{grid-template-columns:1fr}.garena-benchmark-findings{grid-template-columns:1fr}.garena-model-levels li{grid-template-columns:1fr;gap:4px}}
+
 /* AI workflow outcome: separate the before/after values from the headline impact. */
 .workflow-result-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.62fr);gap:48px;align-items:end}
 .workflow-result-impact{border-left:1px solid #9dbbb0;padding:10px 0 10px 36px}
