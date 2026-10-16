@@ -224,3 +224,7 @@
 .garena-decision-result .garena-score small{display:block;line-height:1.7}
 .garena-score-note{border-top:1px solid #c9d9d1;margin:18px 0 0;padding-top:16px;font-size:16px;color:#334c44}
 @media(max-width:600px){.garena-metric-block{padding-top:24px;margin-top:40px}.garena-metric-result,.garena-decision-result{padding:20px}.garena-decision-result .garena-score p{font-size:18px}}
+
+/* Garena: simplify metric result cards */
+.garena-metric-result h4{margin-top:0}.garena-metric-result p{font-size:18px;color:#172b27}.garena-decision-result .garena-score p{font-size:16px;font-weight:400;color:#334c44;margin:8px 0 0}
+@media(max-width:600px){.garena-metric-result p,.garena-decision-result .garena-score p{font-size:16px}}
