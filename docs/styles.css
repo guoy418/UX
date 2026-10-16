@@ -210,3 +210,17 @@
   .vibe-nav-comparison .vibe-shot-button{height:280px}
   .vibe-nav-comparison figcaption{height:118px}
 }
+
+
+/* Garena: clarify the two metric families and their separate outcomes */
+.garena-metric-block{border-top:1px solid #d9e1dc;padding-top:30px;margin-top:52px}
+.garena-metric-block>h3{margin-top:0}
+.garena-metric-result,.garena-decision-result{background:#edf3ef;border-left:3px solid #175b49;border-radius:6px;padding:22px 24px;margin-top:28px}
+.garena-metric-result>span,.garena-decision-result .garena-score>span{display:block;color:#175b49;font-size:14px;font-weight:600}
+.garena-metric-result h4,.garena-decision-result .garena-score h4{font-size:22px;margin:8px 0}
+.garena-metric-result p{margin:0;font-size:16px;color:#526c64}
+.garena-decision-result .garena-score{padding:0;border:0;margin:0}
+.garena-decision-result .garena-score p{font-size:21px;margin:8px 0}
+.garena-decision-result .garena-score small{display:block;line-height:1.7}
+.garena-score-note{border-top:1px solid #c9d9d1;margin:18px 0 0;padding-top:16px;font-size:16px;color:#334c44}
+@media(max-width:600px){.garena-metric-block{padding-top:24px;margin-top:40px}.garena-metric-result,.garena-decision-result{padding:20px}.garena-decision-result .garena-score p{font-size:18px}}
