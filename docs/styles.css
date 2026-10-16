@@ -140,6 +140,7 @@
 .garena-theory-models article>a{display:block;color:#175b49;font-size:14px;margin-bottom:16px}
 .garena-theory-models h4{font-size:21px;line-height:1.55;margin:0 0 16px}
 .garena-theory-models p{font-size:15px;margin:14px 0 0}
+.garena-theory-models p>strong:first-child{display:block;margin-bottom:6px;color:#175b49}
 .garena-model-sequence{padding:14px 0;border-block:1px solid #c7d7cf;color:#175b49}
 .garena-model-sequence b{padding:0 4px;font-weight:400;color:#78978b}
 .garena-ooc-note{padding-top:14px;border-top:1px solid #c7d7cf}
